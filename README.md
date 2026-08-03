@@ -1,8 +1,12 @@
-# Omkar Jadhav | Senior Embedded Systems Engineer
-**Embedded C/C++ | FreeRTOS | Edge AI | TinyML | ESP32 | BESS | HiL Validation**
+# Omkar Jadhav | Senior Embedded Systems & Edge AI Engineer
+
+**Embedded C/C++ | ARM Cortex-M | FreeRTOS | TinyML | Hardware-in-the-Loop (HIL) | BESS & Automotive**
 
 ## 🚀 Profile Summary
-Senior Embedded Systems Validation Architect with 4 years of experience in real-time testing, test automation, and system integration for complex embedded controllers. Expert in architecting **Python-PyTest** frameworks and **HiL (Hardware-in-the-Loop)** platforms like **Typhoon HIL** and **dSPACE**. Specialized in integrating **AI-assisted workflows (LLMs & RAG)** to accelerate test authoring and improve regression efficiency.
+
+Senior Embedded Systems Engineer bridging the gap between mission-critical firmware and on-device Artificial Intelligence. With 4+ years of tier-1 R&D experience (Mercedes-Benz, Fluence), I specialize in architecting real-time, deterministic software systems for resource-constrained hardware. 
+
+My expertise spans from low-level **C/C++ RTOS development** to deploying highly optimized **TinyML / Edge AI pipelines (Quantization-Aware Training, TensorFlow Lite Micro)** natively onto microcontrollers. By combining robust firmware architecture with deep **Hardware-in-the-Loop (HIL)** validation experience, I design intelligent embedded systems that are both highly capable and rigorously tested for the Automotive and Battery Energy Storage (BESS) industries.
 
 ---
 
@@ -10,13 +14,14 @@ Senior Embedded Systems Validation Architect with 4 years of experience in real-
 
 | Category | Tools & Technologies |
 | :--- | :--- |
-| **HiL Platforms** | Typhoon HIL 606, dSPACE SCALEXIO |
-| **Automation** | Python (PyTest, unittest), CAPL, ProveTech, VB.NET, Embedded C, C++ |
-| **Modeling** | MATLAB/Simulink (MiL/SiL/HiL), FMI/FMU, Typhoon Schematic Editor |
-| **Protocols** | CAN, LIN, FlexRay, MQTT, Ethernet, MODBUS |
-| **Diagnostics** | CANoe, INCA, TestRail, SCADA |
-| **AI Integration** | Ollama, Open-source LLMs, RAG, TinyML, EdgeAI, TensorFlow lite |
-| **Standards** | ASPICE, ISO 26262, Agile/V-Model |
+| **Embedded & Firmware** | Embedded C/C++, FreeRTOS, ESP32, ARM Cortex-M (STM32), Microcontroller Architecture |
+| **Edge AI & TinyML** | TensorFlow Lite for Microcontrollers (TFLM), Quantization-Aware Training (QAT), INT8 Optimization, DSP Noise Filtering |
+| **AI Integration** | Ollama, Local LLMs (llama.cpp), Vector Databases, RAG pipelines, NLP |
+| **Hardware-in-the-Loop (HIL)** | Typhoon HIL 606, dSPACE SCALEXIO, MiL/SiL/HiL Validation |
+| **Test Automation & Scripting** | Python (PyTest, unittest), CAPL, ProveTech, VB.NET |
+| **Modeling & Simulation** | MATLAB/Simulink, FMI/FMU, Typhoon Schematic Editor |
+| **Protocols & Diagnostics** | CAN, LIN, FlexRay, MODBUS, MQTT, Ethernet, CANoe, INCA, SCADA |
+| **Standards & Methodologies** | ASPICE, ISO 26262 (Functional Safety), Agile / V-Model |
 
 ---
 
@@ -24,26 +29,27 @@ Senior Embedded Systems Validation Architect with 4 years of experience in real-
 
 ### **Fluence (A Siemens and AES Company)**
 *Senior Embedded Systems Engineer | Sep 2024 – Present* 
-* Architected and deployed a scalable **Python-PyTest HiL automation framework** for inverter and BESS controllers.
-* Implemented **AI-assisted requirement-to-test automation** using open-source LLMs and RAG pipelines.
-* Integrated automation into **CI/CD pipelines**, reducing regression effort by 30%.
-* Modeled BESS components for validation of grid-response scenarios including FRT, ROCOF, and LVRT/HVRT.
+
+*   **Firmware Architecture & Grid Validation:** Architected high-fidelity, closed-loop **Hardware-in-the-Loop (HIL)** models (Typhoon HIL) to validate real-time microcontroller performance for Utility-Scale Battery Energy Storage Systems (BESS) and grid-tied inverters. Evaluated critical transient responses including FRT, ROCOF, and LVRT/HVRT under strict regulatory compliance.
+*   **AI-Driven R&D:** Engineered an internal, privacy-first **RAG pipeline using local LLMs (Ollama)** to ingest dense engineering requirements and automatically generate actionable validation strategies, accelerating firmware test authoring in a secure environment.
+*   **CI/CD & Automation Architecture:** Designed and deployed a robust, scalable **Python/PyTest** automation framework integrated directly into the CI/CD pipeline, minimizing human-in-the-loop dependencies and reducing full-system regression cycle times by **30%**.
 
 ### **Mercedes-Benz Research and Development India**
-*HiL Validation Engineer - Embedded Systems | Aug 2022 – Sep 2024* 
-* Led **ASPICE SWE.5/SWE.6-aligned** firmware integration test plans for powertrain ECUs.
-* Increased regression coverage by **50%** through scalable HiL test architecture and optimized simulation.
-* Automated tests using Python, CAPL, and VB.NET, reducing manual effort by **35%**.
-* Validated cloud-connected vehicle features by testing data flow between physical ECUs and cloud APIs.
+*Embedded Systems R&D Engineer | Aug 2022 – Sep 2024* 
+
+*   **Safety-Critical Firmware Integration:** Led system-level integration and validation for powertrain ECUs in strict adherence to **ASPICE SWE.5/SWE.6** and **ISO 26262 ASIL-B/C** functional safety standards, ensuring deterministic execution of critical drivetrain logic.
+*   **HIL Simulation & Test Automation:** Developed scalable, automated validation architectures on **dSPACE SCALEXIO** using CAPL, VB.NET, and Python. Optimized test execution latency, resulting in a **50% increase** in regression coverage and a **35% reduction** in manual diagnostic effort.
+*   **Vehicle-to-Cloud (V2C) Telemetry:** Engineered end-to-end validation pipelines for connected-car features, verifying high-throughput data integrity across physical vehicle buses (**CAN, LIN, FlexRay**) and their respective cloud API endpoints.
 
 ---
+
 
 ## 💻 Featured Projects
 ### ⚡ [Concurrent-TinyML-FreeRTOS: Dual-Model Real-Time Scheduling](https://github.com/YOUR_GITHUB_USERNAME/concurrent-tinyml-freertos)
 
 * **What it is:** A production-grade reference architecture for executing multiple independent Edge AI workloads (Anomaly Detection + SoC/SoH Estimation) concurrently on a single-core microcontroller. Replaces blocking superloop logic with **thread-safe, prioritized FreeRTOS tasks**, utilizing mutexes (`xSemaphore`) to prevent memory contention. Achieved zero missed real-time deadlines with a total static memory footprint under **16KB**.
 * **Tech Stack:** `FreeRTOS`, `C/C++`, `TensorFlow Lite Micro`, `ARM Cortex-M/ESP32`, `Embedded Systems Architecture`, `Real-Time Scheduling`
-* 
+
 ### 🔋 [TinyML BMS Anomaly Detection: Intelligent Edge AI](https://github.com/omkar-jadhav-embedded-systems/TinyML-BMS-Anomaly-Detection)
 * **What it is:** An end-to-end TinyML pipeline for real-time hardware anomaly detection in Battery Energy Storage Systems (BESS) and Electric Vehicles (EVs). Deploys a **Quantization-Aware Autoencoder** on resource-constrained microcontrollers using **TensorFlow Lite INT8**, reducing the model size from **~343 KB to ~4 KB (>98% compression)** while enabling deterministic, low-latency, fully offline edge inference. Includes an industrial validation dashboard, automated model artifact generation (`.tflite`, `.h`, `.hex`), and a C++ inference engine with DSP-based signal filtering for safety-critical embedded applications.
 * **Tech Stack:** `TensorFlow/Keras`, `TensorFlow Model Optimization (QAT)`, `TensorFlow Lite (INT8)`, `TinyML`, `Python`, `Streamlit`, `C/C++`, `DSP`, `Pandas`, `NumPy`
