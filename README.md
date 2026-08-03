@@ -1,5 +1,5 @@
 # Omkar Jadhav | Senior Embedded Systems Engineer
-**Validation Architecture & HiL Automation**
+**Embedded C/C++ | FreeRTOS | Edge AI | TinyML | ESP32 | BESS | HiL Validation**
 
 ## 🚀 Profile Summary
 Senior Embedded Systems Validation Architect with 4 years of experience in real-time testing, test automation, and system integration for complex embedded controllers. Expert in architecting **Python-PyTest** frameworks and **HiL (Hardware-in-the-Loop)** platforms like **Typhoon HIL** and **dSPACE**. Specialized in integrating **AI-assisted workflows (LLMs & RAG)** to accelerate test authoring and improve regression efficiency.
@@ -39,7 +39,11 @@ Senior Embedded Systems Validation Architect with 4 years of experience in real-
 ---
 
 ## 💻 Featured Projects
+### ⚡ [Concurrent-TinyML-FreeRTOS: Dual-Model Real-Time Scheduling](https://github.com/YOUR_GITHUB_USERNAME/concurrent-tinyml-freertos)
 
+* **What it is:** A production-grade reference architecture for executing multiple independent Edge AI workloads (Anomaly Detection + SoC/SoH Estimation) concurrently on a single-core microcontroller. Replaces blocking superloop logic with **thread-safe, prioritized FreeRTOS tasks**, utilizing mutexes (`xSemaphore`) to prevent memory contention. Achieved zero missed real-time deadlines with a total static memory footprint under **16KB**.
+* **Tech Stack:** `FreeRTOS`, `C/C++`, `TensorFlow Lite Micro`, `ARM Cortex-M/ESP32`, `Embedded Systems Architecture`, `Real-Time Scheduling`
+* 
 ### 🔋 [TinyML BMS Anomaly Detection: Intelligent Edge AI](https://github.com/omkar-jadhav-embedded-systems/TinyML-BMS-Anomaly-Detection)
 * **What it is:** An end-to-end TinyML pipeline for real-time hardware anomaly detection in Battery Energy Storage Systems (BESS) and Electric Vehicles (EVs). Deploys a **Quantization-Aware Autoencoder** on resource-constrained microcontrollers using **TensorFlow Lite INT8**, reducing the model size from **~343 KB to ~4 KB (>98% compression)** while enabling deterministic, low-latency, fully offline edge inference. Includes an industrial validation dashboard, automated model artifact generation (`.tflite`, `.h`, `.hex`), and a C++ inference engine with DSP-based signal filtering for safety-critical embedded applications.
 * **Tech Stack:** `TensorFlow/Keras`, `TensorFlow Model Optimization (QAT)`, `TensorFlow Lite (INT8)`, `TinyML`, `Python`, `Streamlit`, `C/C++`, `DSP`, `Pandas`, `NumPy`
