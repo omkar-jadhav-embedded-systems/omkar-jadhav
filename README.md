@@ -45,7 +45,7 @@ My expertise spans from low-level **C/C++ RTOS development** to deploying highly
 
 
 ## 💻 Featured Projects
-### ⚡ [Concurrent-TinyML-FreeRTOS: Dual-Model Real-Time Scheduling](https://github.com/YOUR_GITHUB_USERNAME/concurrent-tinyml-freertos)
+### ⚡ [Concurrent-TinyML-FreeRTOS: Dual-Model Real-Time Scheduling](https://github.com/omkar-jadhav-embedded-systems/concurrent-tinyml-freertos)
 
 * **What it is:** A production-grade reference architecture for executing multiple independent Edge AI workloads (Anomaly Detection + SoC/SoH Estimation) concurrently on a single-core microcontroller. Replaces blocking superloop logic with **thread-safe, prioritized FreeRTOS tasks**, utilizing mutexes (`xSemaphore`) to prevent memory contention. Achieved zero missed real-time deadlines with a total static memory footprint under **16KB**.
 * **Tech Stack:** `FreeRTOS`, `C/C++`, `TensorFlow Lite Micro`, `ARM Cortex-M/ESP32`, `Embedded Systems Architecture`, `Real-Time Scheduling`
